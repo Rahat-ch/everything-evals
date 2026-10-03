@@ -1,6 +1,6 @@
 # Free resources for learning LLM and AI evals
 
-**Compiled:** 2026-10-03
+**Compiled:** 2026-10-03. **Audited:** 2026-10-03. Every linked resource was checked for an author who works in AI or is a researcher: 87 checked, none failed.
 
 This is a reading list for a deep dive into evals: evaluating LLM apps and agents, error analysis, LLM-as-judge, statistics, benchmarks and their pitfalls, human labelling, online and offline evals, and safety evaluation. It was compiled with web search, and every link was fetched on 2026-10-03 to check that it resolves and is free to read or watch. Only four kinds of source made the cut: practitioners who have shipped eval systems, AI lab teams, peer-reviewed or widely cited research, and government or standards bodies. Vendor marketing, paywalled material and generic explainer channels were left out. Each entry has one line on what it is. Nothing here is summarised.
 
@@ -27,10 +27,10 @@ Read these in this order.
 ### 1. Foundations and methodology (6)
 
 - **[Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/)** · Hamel Husain · *20+ years in ML at GitHub and Airbnb; his early code-understanding research was used by OpenAI; now runs eval consulting for product teams* · blog · ~16 min · 2024-03-29
-- **[AI Evals: Everything You Need to Know (FAQ)](https://hamel.dev/blog/posts/evals-faq/)** · Hamel Husain and Shreya Shankar · *the two co-teach the largest evals course (5,000+ students); Shankar's research is listed below* · blog (long FAQ) · ~18,000 words, ~75 min · first published 2025, current version 2026-09-18. The page advertises their paid course; the FAQ itself is free.
+- **[AI Evals: Everything You Need to Know (FAQ)](https://hamel.dev/blog/posts/evals-faq/)** · Hamel Husain and Shreya Shankar · *the two co-teach the AI Evals For Engineers & PMs course on Maven, which they say has taught 5,000+ engineers and PMs; Shankar's research is listed below* · blog (long FAQ) · ~18,000 words, ~75 min · first published 2025, current version 2026-09-21. The page advertises their paid course; the FAQ itself is free.
 - **[Task-Specific LLM Evals that Do & Don't Work](https://eugeneyan.com/writing/evals/)** · Eugene Yan · *Principal Applied Scientist at Amazon 2020–2025, where he built LLM summarisation, translation and Q&A systems; now at Anthropic* · blog · ~30 min · 2024-03-31
 - **[What We've Learned From A Year of Building with LLMs](https://applied-llms.org/)** · Eugene Yan, Bryan Bischof, Charles Frye, Hamel Husain, Jason Liu, Shreya Shankar · *six practitioners who built and shipped LLM products; first published by O'Reilly* · long essay (evals are one thread throughout) · ~60 min · 2024-06
-- **[Successful language model evals](https://www.jasonwei.net/blog/evals)** · Jason Wei · *lead author of the chain-of-thought prompting paper; lead author of OpenAI's SimpleQA benchmark* · blog · ~7 min · 2024-05-24
+- **[Successful language model evals](https://www.jasonwei.net/blog/evals)** · Jason Wei · *first author of the chain-of-thought prompting paper and of OpenAI's SimpleQA benchmark; now at Meta Superintelligence Labs* · blog · ~7 min · 2024-05-24
 - **[LLM Evaluation Guidebook](https://huggingface.co/spaces/OpenEvals/evaluation-guidebook)** · Clémentine Fourrier and Hugging Face · *ran the Hugging Face Open LLM Leaderboard and co-built the `lighteval` library* · guide (many short chapters on benchmarks, human eval and LLM-as-judge) · ~43 pages in the [GitHub version](https://github.com/huggingface/evaluation-guidebook) · 2024-10, current version 2025-12
 
 ### 2. Error analysis and building evals for an app (4)
@@ -38,7 +38,7 @@ Read these in this order.
 - **[A Field Guide to Rapidly Improving AI Products](https://hamel.dev/blog/posts/field-guide/)** · Hamel Husain · *see above* · blog · ~25 min · 2025-03-24
 - **[An LLM-as-Judge Won't Save The Product—Fixing Your Process Will](https://eugeneyan.com/writing/eval-process/)** · Eugene Yan · *see above* · blog · ~5 min · 2025-04-20
 - **[Do Automated Evals Work?](https://parlance-labs.com/blog/posts/auto-evals/)** · Antaripa Saha and Hamel Husain (Parlance Labs) · *an experiment comparing human-annotated traces with automated trace-review tools* · blog · ~9 min · 2026-07-11. This is a consultancy blog, but the post is a measured comparison, not a pitch. It names vendor tools as the objects being tested.
-- **[There Are Only 6 RAG Evals](https://jxnl.co/writing/2025/05/19/there-are-only-6-rag-evals/)** · Jason Liu · *creator of the Instructor library; consulted on RAG systems for several years; now at OpenAI* · blog · ~8 min · 2025-05-19
+- **[There Are Only 6 RAG Evals](https://jxnl.co/writing/2025/05/19/there-are-only-6-rag-evals/)** · Jason Liu · *creator of the Instructor library; ran an AI consulting practice; now on the Codex team at OpenAI* · blog · ~8 min · 2025-05-19
 
 ### 3. LLM-as-judge and its calibration (6)
 
@@ -46,7 +46,7 @@ Read these in this order.
 - **[Evaluating the Effectiveness of LLM-Evaluators (aka LLM-as-Judge)](https://eugeneyan.com/writing/llm-evaluators/)** · Eugene Yan · *see above; it surveys about two dozen papers* · blog (literature review) · ~40 min · 2024-08-18
 - **[Who Validates the Validators? Aligning LLM-Assisted Evaluation of LLM Outputs with Human Preferences](https://arxiv.org/abs/2404.12272)** · Shreya Shankar, J.D. Zamfirescu-Pereira, Björn Hartmann, Aditya Parameswaran, Ian Arawjo · *UC Berkeley EECS PhD research (EvalGen), published at UIST 2024; Shankar joins Carnegie Mellon as an assistant professor in 2027* · paper · 16 pp · 2024-04
 - **[Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685)** · Lianmin Zheng et al. (LMSYS, UC Berkeley and others) · *the paper that named and measured position, verbosity and self-preference bias; NeurIPS 2023 Datasets and Benchmarks* · paper · 29 pp · 2023-06
-- **[Large Language Models are not Fair Evaluators](https://arxiv.org/abs/2305.17926)** · Peiyi Wang et al. (Peking University and others) · *shows that swapping answer order flips judge verdicts, and proposes calibration fixes* · paper · 11 pp · 2023-05
+- **[Large Language Models are not Fair Evaluators](https://arxiv.org/abs/2305.17926)** · Peiyi Wang et al. (Peking University and others) · *shows that swapping answer order flips judge verdicts, and proposes calibration fixes; ACL 2024* · paper · 11 pp · 2023-05
 - **[Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators](https://arxiv.org/abs/2404.04475)** · Yann Dubois, Balázs Galambosi, Percy Liang, Tatsunori Hashimoto (Stanford) · *the AlpacaEval maintainers correcting their own judge for length bias; COLM 2024* · paper · 12 pp · 2024-04
 
 ### 4. Statistics and rigour (5)
@@ -61,7 +61,7 @@ Read these in this order.
 
 - **[Holistic Evaluation of Language Models (HELM)](https://arxiv.org/abs/2211.09110)** · Percy Liang et al., Stanford CRFM · *the multi-metric, multi-scenario benchmark framework; published in TMLR* · paper · 162 pp (the main text is far shorter) · 2022-11
 - **[Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference](https://arxiv.org/abs/2403.04132)** · Wei-Lin Chiang et al., LMSYS / UC Berkeley · *the team that ran the crowd-sourced pairwise leaderboard; ICML 2024* · paper · 29 pp · 2024-03
-- **[The Leaderboard Illusion](https://arxiv.org/abs/2504.20879)** · Shivalika Singh et al., Cohere Labs with university co-authors · *a data-driven critique of how Chatbot Arena rankings can be gamed* · paper · 72 pp · 2025-04
+- **[The Leaderboard Illusion](https://arxiv.org/abs/2504.20879)** · Shivalika Singh et al., Cohere Labs with university co-authors · *a data-driven critique of how Chatbot Arena rankings can be gamed* · paper · 68 pp · 2025-04
 - **[Lessons from the Trenches on Reproducible Evaluation of Language Models](https://arxiv.org/abs/2405.14782)** · Stella Biderman, Hailey Schoelkopf et al., EleutherAI · *the maintainers of lm-evaluation-harness, the most widely used open benchmark runner* · paper · 31 pp · 2024-05
 - **[NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark](https://arxiv.org/abs/2310.18018)** · Oscar Sainz et al. · *position paper on contamination from NLP researchers; EMNLP Findings* · paper · 12 pp · 2023-10
 - **[A Careful Examination of Large Language Model Performance on Grade School Arithmetic (GSM1k)](https://arxiv.org/abs/2405.00332)** · Hugh Zhang et al., Scale AI · *built a fresh GSM8K-style test set to measure overfitting directly; NeurIPS 2024 Datasets and Benchmarks* · paper · 45 pp · 2024-05
@@ -69,7 +69,7 @@ Read these in this order.
 
 ### 6. Agent evals (5)
 
-- **[Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)** · Anthropic Engineering · *written by the lab that builds and evaluates Claude's agent abilities* · blog · ~25 min · 2026-01-09
+- **[Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)** · Mikaela Grace, Jeremy Hadfield, Rodrigo Olivares, Jiri De Jonghe (Anthropic Engineering) · *written by the lab that builds and evaluates Claude's agent abilities* · blog · ~25 min · 2026-01-09
 - **[AI Agents That Matter](https://arxiv.org/abs/2407.01502)** · Sayash Kapoor, Benedikt Stroebl, Zachary Siegel, Nitya Nadgir, Arvind Narayanan, Princeton · *Princeton CITP; Kapoor and Narayanan later built the Holistic Agent Leaderboard* · paper · 33 pp · 2024-07
 - **[Establishing Best Practices for Building Rigorous Agentic Benchmarks](https://arxiv.org/abs/2507.02825)** · Yuxuan Zhu et al. (25 authors from academia and industry) · *audits popular agent benchmarks for broken tasks and graders, and proposes a checklist* · paper · 39 pp · 2025-07
 - **[τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](https://arxiv.org/abs/2406.12045)** · Shunyu Yao, Noah Shinn, Pedram Razavi, Karthik Narasimhan (Sierra) · *introduced the pass^k reliability metric; Yao is the lead author of ReAct* · paper · 50 pp · 2024-06
@@ -81,7 +81,7 @@ Read these in this order.
 - **[Best practices for the human evaluation of automatically generated text](https://aclanthology.org/W19-8643/)** · Chris van der Lee, Albert Gatt, Emiel van Miltenburg, Sander Wubben, Emiel Krahmer · *a peer-reviewed survey of human-eval practice in text generation (INLG 2019)* · paper · 14 pp · 2019
 - **[All That's 'Human' Is Not Gold: Evaluating Human Evaluation of Generated Text](https://aclanthology.org/2021.acl-long.565/)** · Elizabeth Clark et al., University of Washington · *shows untrained raters cannot tell GPT-3 text from human text; ACL 2021* · paper · 15 pp · 2021
 
-The guidebook's [human evaluation chapters](https://github.com/huggingface/evaluation-guidebook) and Hamel Husain's judge guide (section 3) also cover labelling in practice.
+The guidebook's [human evaluation chapters](https://github.com/huggingface/evaluation-guidebook/tree/main/contents/human-evaluation) and Hamel Husain's judge guide (section 3) also cover labelling in practice.
 
 ### 8. Online evals and experiments (2)
 
@@ -93,7 +93,7 @@ Neither is about LLMs. They are here because online LLM evals are A/B tests, and
 ### 9. Frameworks and tools (docs) (5)
 
 - **[Inspect](https://inspect.aisi.org.uk/)** · UK AI Security Institute (with Meridian Labs) · *the framework the UK government institute uses for its own model testing; lead developer JJ Allaire, founder of RStudio/Posit* · docs (tutorial, tasks, solvers, scorers, [agents](https://inspect.aisi.org.uk/agents.html)) · many pages · first released 2024-05, actively maintained. The companion [inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals) repo holds ready-made benchmark implementations.
-- **[lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)** · EleutherAI · *the runner behind the Hugging Face Open LLM Leaderboard and many papers* · repo and docs · README plus docs folder · 2020 onward, actively maintained
+- **[lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)** · EleutherAI · *the runner behind the Hugging Face Open LLM Leaderboard (retired March 2025) and hundreds of papers* · repo and docs · README plus docs folder · 2020 onward, actively maintained
 - **[HELM framework](https://crfm.stanford.edu/helm/)** ([code](https://github.com/stanford-crfm/helm)) · Stanford CRFM · *the open framework behind the HELM paper and leaderboards* · site, repo and docs · 2021 onward, actively maintained
 - **[OpenAI Evals](https://github.com/openai/evals)** · OpenAI · *OpenAI's open-source framework and registry of evals* · repo · README plus docs folder · 2023 onward. This is separate from OpenAI's hosted Evals product, which is shutting down (see Notes).
 - **[simple-evals](https://github.com/openai/simple-evals)** · OpenAI · *the reference code OpenAI published behind its benchmark numbers* · repo · short · 2024-04. Since July 2025 it gets no new model results. It still hosts HealthBench, BrowseComp and SimpleQA.
@@ -110,9 +110,9 @@ Other lab work sits by topic: Anthropic's statistics post (section 4), Anthropic
 
 - **[Model evaluation for extreme risks](https://arxiv.org/abs/2305.15324)** · Toby Shevlane et al., Google DeepMind with co-authors from other labs and universities · *the framing paper for dangerous-capability evals* · paper · 20 pp · 2023-05
 - **[Early lessons from evaluating frontier AI systems](https://www.aisi.gov.uk/blog/early-lessons-from-evaluating-frontier-ai-systems)** · UK AI Security Institute · *the government body that tests frontier models before release* · blog · ~20 min · 2024-10-24
-- **[We Need A 'Science of Evals'](https://www.apolloresearch.ai/science/we-need-a-science-of-evals)** · Apollo Research · *independent evaluations organisation that tests frontier models for deceptive behaviour* · blog · ~13 min · 2024-01-22
+- **[We Need A 'Science of Evals'](https://www.apolloresearch.ai/science/we-need-a-science-of-evals)** · Marius Hobbhahn and Jérémy Scheurer, Apollo Research · *Hobbhahn is CEO and co-founder of Apollo, an independent evaluations organisation that tests frontier models for deceptive behaviour* · blog · ~13 min · 2024-01-22
 - **[AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)** ([AI RMF 1.0 PDF](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf), [Generative AI Profile, NIST AI 600-1](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)) · NIST · *US standards body* · standard (PDFs) · 48 pp and 64 pp · 2023-01 and 2024-07
-- **[Practices for Automated Benchmark Evaluations of Language Models (NIST AI 800-2, initial public draft)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-2.ipd.pdf)** · NIST ([announcement](https://www.nist.gov/news-events/news/2026/01/towards-best-practices-automated-benchmark-evaluations)) · *US standards body; covers measurement targets, running evals, and reporting with uncertainty* · draft standard (PDF) · 39 pp · 2026-01. Still a draft: comments closed 2026-03-31, and no final version was listed on 2026-10-03.
+- **[Practices for Automated Benchmark Evaluations of Language Models (NIST AI 800-2, initial public draft)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-2.ipd.pdf)** · NIST Center for AI Standards and Innovation (Drew Keller, Ryan Steed, Tony Wang, Stevie Bergman, Peter Cihon) ([announcement](https://www.nist.gov/news-events/news/2026/01/towards-best-practices-automated-benchmark-evaluations)) · *US standards body; covers measurement targets, running evals, and reporting with uncertainty* · draft standard (PDF) · 39 pp · 2026-01. Still a draft: comments closed 2026-03-31, and no final version was listed on 2026-10-03.
 
 ### 12. Courses and lectures (3)
 
@@ -134,10 +134,11 @@ Other lab work sits by topic: Anthropic's statistics post (section 4), Anthropic
 
 - **Paid material.** The full "AI Evals For Engineers & PMs" course (Maven) is paid, so only its free preview is listed. Chip Huyen's *AI Engineering* (O'Reilly) has strong evaluation chapters but is a paid book. Ron Kohavi's book *Trustworthy Online Controlled Experiments* is paid, and the free copies that turn up in search (Scribd) are unauthorised, so they are excluded.
 - **Vendor-led material.** The AI Engineer World's Fair "Evals" track playlist was hosted by an eval-tool vendor, and most of its talks are from tool companies, so the playlist was not listed. The same goes for the DeepLearning.AI short courses on evals, which are co-made with tool vendors.
-- **Podcasts.** [Hamel Husain and Shreya Shankar on Lenny's Podcast](https://www.youtube.com/watch?v=BsWxPI9UM4c) (106 min, 2025-09-25) is free and on topic. It was left out because it is a podcast interview, not a talk at a conference or lab venue. It largely repeats their FAQ and course preview.
+- **Podcasts.** Hamel Husain and Shreya Shankar's interview on Lenny's Podcast (2025-09-25) was left out. It is a podcast interview by a host who doesn't work in AI, not a talk at a conference or lab venue, and it largely repeats their FAQ and course preview.
 - **OpenAI's hosted Evals product docs.** The [Evals platform guide](https://developers.openai.com/api/docs/guides/evals) documents a product that goes read-only on 2026-10-31 and shuts down on 2026-11-30, according to OpenAI's own best-practices page. The best-practices guide is still listed.
 - **Anthropic's "Evals for AI Agents" webinar** (2026-07-14) needs registration, so it was left out. The Anthropic agent-evals blog post covers the same ground.
-- **Lilian Weng and Simon Willison.** Both are credible, but neither has a core evals piece. Weng's [Extrinsic Hallucinations in LLMs](https://lilianweng.github.io/posts/2024-07-07-hallucination/) (2024-07) has a section on hallucination benchmarks. Willison's [evals tag](https://simonwillison.net/tags/evals/) is a running feed of short notes, useful for keeping up.
+- **Lilian Weng** (ex-OpenAI VP of Research and Safety) has no core evals piece. Her [Extrinsic Hallucinations in LLMs](https://lilianweng.github.io/posts/2024-07-07-hallucination/) (2024-07) has a section on hallucination benchmarks.
+- **Simon Willison**'s blog notes on evals were left out. He builds LLM tools, but by his own description he isn't employed in AI or a researcher, which is this list's bar.
 - **YouTube explainers** of the Anthropic agent-evals post by third-party channels were skipped. Read the original instead.
 
 ### Cut for length (all verified and free; worth a look later)
@@ -157,13 +158,13 @@ Other lab work sits by topic: Anthropic's statistics post (section 4), Anthropic
 - **OpenAI's [Introducing SWE-bench Verified](https://openai.com/index/introducing-swe-bench-verified/)** (2024-08) returned HTTP 403 to automated fetches, so it was not listed. It is a good case study of fixing a broken benchmark, and it may load fine in a normal browser. The same applies to OpenAI's Preparedness Framework page.
 - **The Hugging Face guidebook Space** resolves, but its content renders in the browser and could not be read by the fetcher. The [GitHub version](https://github.com/huggingface/evaluation-guidebook) was read instead. Its README says the Space holds the newer version.
 - **Undated pages.** The Claude docs and OpenAI docs pages show no publish date. They are living documents, checked on 2026-10-03.
-- **Credentials** come from the authors' own about pages (Husain, Shankar, Yan, Liu, Willison), arXiv author lists, and org pages. Venue claims come from arXiv comments or the proceedings URL. A few venue details were not shown on the fetched pages and come from the paper's own header or general knowledge: UIST 2024 for Shankar et al., ACL 2024 for Wang et al., and ICML 2024 for Chatbot Arena.
+- **Credentials** come from the authors' own about pages (Husain, Shankar, Yan, Liu, Wei, Hobbhahn), arXiv author lists, and org pages. Venue claims come from arXiv comments or the proceedings URL. Three venue details are not in the arXiv comments and were confirmed from the proceedings: UIST 2024 for Shankar et al. (https://dl.acm.org/doi/10.1145/3654777.3676450), ACL 2024 for Wang et al. (https://aclanthology.org/2024.acl-long.511/), and ICML 2024 for Chatbot Arena (https://proceedings.mlr.press/v235/chiang24b.html).
 
 ### Overlaps
 
 - Evan Miller's Anthropic blog post and the "Adding Error Bars" paper are the same work, at two lengths.
 - The applied-llms.org essay and the AI Engineer 2024 keynote come from the same six authors and say much the same things.
-- The Hamel/Shankar FAQ, the course preview, Hamel's blog posts and the Lenny's Podcast episode all share one method: error analysis, then binary judges validated against a human. Read one in depth and skim the rest.
+- The Hamel/Shankar FAQ, the course preview and Hamel's blog posts all share one method: error analysis, then binary judges validated against a human. Read one in depth and skim the rest.
 - Hamel's judge guide, Eugene Yan's LLM-evaluators review and the Shankar et al. paper cover the same question from practice, from the literature and from research.
 - Schoelkopf's talk, the "Lessons from the Trenches" paper and lm-evaluation-harness all come from the EleutherAI team.
 - "AI Agents That Matter" and the Holistic Agent Leaderboard come from the same Princeton group.

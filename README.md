@@ -2,7 +2,7 @@
 
 A reading list for learning how to evaluate LLM apps and agents properly. Everything on it is free and comes from people who do this work: practitioners who have shipped eval systems, AI lab teams, researchers, and standards bodies. No influencer content, no vendor marketing, nothing paywalled.
 
-**→ [The full list: resources.md](resources.md)**: 57 resources in 13 categories, each with who wrote it, why they're credible, format, length and date. Every link was checked on 2026-10-03.
+**→ [The full list: resources.md](resources.md)**: 57 resources in 13 categories, each with who wrote it, why they're credible, format, length and date. Every link was checked on 2026-10-03, and every linked resource was audited to confirm its author works in AI or is a researcher.
 
 ## Start here
 
