@@ -48,5 +48,5 @@ Know a good resource that fits? [Suggest it](../../issues/new?template=suggest-a
 
 ---
 
-<p align="right"><a href="https://github.com/Rahat-ch"><img src="assets/logo.svg" alt="rahat." height="36"></a></p>
+<p align="right"><a href="https://github.com/Rahat-ch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-white.svg"><img src="assets/logo.svg" alt="rahat." height="36"></picture></a></p>
 
