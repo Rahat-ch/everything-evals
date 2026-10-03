@@ -1,5 +1,7 @@
 # Everything Evals
 
+![Vibes struck through, evals checked: Everything Evals, free resources from people who build AI](assets/card.png)
+
 A reading list for learning how to evaluate LLM apps and agents properly. Everything on it is free and comes from people who do this work: practitioners who have shipped eval systems, AI lab teams, researchers, and standards bodies. No influencer content, no vendor marketing, nothing paywalled.
 
 **→ [The full list: resources.md](resources.md)**: 57 resources in 13 categories, each with who wrote it, why they're credible, format, length and date. Every link was checked on 2026-10-03, and every linked resource was audited to confirm its author works in AI or is a researcher.
@@ -43,3 +45,8 @@ Know a good resource that fits? [Suggest it](../../issues/new?template=suggest-a
 ## License
 
 [MIT](LICENSE) © 2026 Rahat Chowdhury. Each linked resource belongs to its own author, under its own terms.
+
+---
+
+<p align="right"><a href="https://github.com/Rahat-ch"><img src="assets/logo.svg" alt="rahat." height="36"></a></p>
+
