@@ -1,0 +1,18 @@
+name: Broken link or outdated info
+description: A link that doesn't work, or a detail that's out of date
+labels: ["fix"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry
+      placeholder: Title of the resource
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong
+      description: For example, the link 404s, the page moved, or the author changed jobs. Include the new link or a source if you have one.
+    validations:
+      required: true

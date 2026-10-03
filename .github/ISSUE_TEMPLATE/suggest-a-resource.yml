@@ -1,0 +1,61 @@
+name: Suggest a resource
+description: Propose a free evals resource from someone who works in AI or is a researcher
+labels: ["suggestion"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author(s) and org
+    validations:
+      required: true
+  - type: textarea
+    id: credible
+    attributes:
+      label: Why the author is credible
+      description: What they've built, run or published in AI or research, with a link that shows it (their site, employer or lab page, paper author list).
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Foundations and methodology
+        - Error analysis and building evals for an app
+        - LLM-as-judge and its calibration
+        - Statistics and rigour
+        - Benchmarks, leaderboards and their pitfalls
+        - Agent evals
+        - Human labelling and agreement
+        - Online evals and experiments
+        - Frameworks and tools
+        - Lab guidance
+        - Safety, capability and government frameworks
+        - Courses and lectures
+        - Talks
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: It's free to read or watch (no paywall)
+          required: true
+        - label: The author works in AI or is a researcher
+          required: true
+        - label: It's not product marketing
+          required: true

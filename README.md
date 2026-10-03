@@ -36,4 +36,10 @@ Read these in order:
 
 The list was compiled with web search. Each link was fetched to check that it resolves and is free. Credentials come from the authors' own pages, paper author lists and org pages. Things that were left out on purpose, things that couldn't be verified, and resources that overlap are all noted at the end of [resources.md](resources.md).
 
-Links rot and job titles change. If something is broken or out of date, open an issue.
+## Contributing
+
+Know a good resource that fits? [Suggest it](../../issues/new?template=suggest-a-resource.yml), or open a pull request. The bar for what gets in, and the entry format, are in [CONTRIBUTING.md](CONTRIBUTING.md). Links rot and job titles change, so [reports of broken or outdated entries](../../issues/new?template=broken-or-outdated.yml) help too.
+
+## License
+
+[MIT](LICENSE) © 2026 Rahat Chowdhury. Each linked resource belongs to its own author, under its own terms.
