@@ -1,33 +1,34 @@
 <title>Everything Evals card</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600&family=Geist:wght@400;600&family=Geist+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=satoshi@400&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=satoshi@500&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=satoshi@700&display=swap">
 <style>
-/* Layout: two giant words stacked hard left, a red-pen strike and check as the only colour, one quiet line at the foot */
+/* Layout: two giant words stacked hard left, a green-pen strike and check as the only colour; foot: name and link left, the r. logo bottom right */
 :root{
   --paper:#ffffff;
   --ink:#0b0b0b;
   --quiet:#6b6b6b;
-  --pen:#e5322d;
-  --display:"Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
-  --sans:"Geist", "Helvetica Neue", Arial, sans-serif;
-  --mono:"Geist Mono", ui-monospace, Menlo, monospace;
+  --pen:#127a4f;
+  --sans:"Satoshi", "Helvetica Neue", Arial, sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1600px;height:900px;background:var(--paper);overflow:hidden}
-body{color:var(--ink);font-family:var(--sans);padding:84px 110px 72px;display:flex;flex-direction:column}
-.words{display:flex;flex-direction:column;gap:0}
-.w{font-family:var(--display);font-size:310px;line-height:.84;font-weight:600;letter-spacing:-.035em;font-variation-settings:"opsz" 96;position:relative;display:inline-flex;align-items:center;width:max-content}
-.w.vibes{color:var(--ink)}
+body{color:var(--ink);font-family:var(--sans);padding:80px 110px 72px;display:flex;flex-direction:column}
+.words{display:flex;flex-direction:column}
+.w{font-size:300px;line-height:.86;font-weight:700;letter-spacing:-.045em;position:relative;display:inline-flex;align-items:center;width:max-content}
 .w svg{position:absolute;overflow:visible;pointer-events:none}
-.strike{left:-30px;right:-40px;top:0;bottom:0;width:calc(100% + 70px);height:100%}
-.check{width:210px;height:190px;position:relative!important;margin-left:36px;transform:translateY(-14px)}
+.strike{left:-30px;top:0;width:calc(100% + 70px);height:100%}
+.check{width:200px;height:180px;position:relative!important;margin-left:34px;transform:translateY(-10px)}
 .pen{fill:none;stroke:var(--pen);stroke-linecap:round;stroke-linejoin:round}
 .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
-.name{font-size:34px;font-weight:600;letter-spacing:-.01em;display:flex;flex-direction:column;gap:6px;white-space:nowrap}
-.name span{font-weight:400;color:var(--quiet);font-size:28px}
-.url{font-family:var(--mono);font-size:24px;color:var(--ink);white-space:nowrap;padding-bottom:4px}
+.name{display:flex;flex-direction:column;gap:6px;white-space:nowrap}
+.name b{font-size:34px;font-weight:700;letter-spacing:-.015em}
+.name span{font-size:27px;font-weight:400;color:var(--quiet)}
+.name .url{font-size:24px;font-weight:500;color:var(--ink);margin-top:6px}
+.logo{height:92px;width:auto;display:block}
 </style>
 <div class="words">
-  <div class="w vibes">vibes
+  <div class="w">vibes
     <svg class="strike" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
       <path class="pen" vector-effect="non-scaling-stroke" stroke-width="30" d="M1 60 C 20 55, 45 50, 62 49 S 92 44, 99 41"/>
     </svg>
@@ -37,6 +38,6 @@ body{color:var(--ink);font-family:var(--sans);padding:84px 110px 72px;display:fl
     </svg></div>
 </div>
 <div class="foot">
-  <div class="name">Everything Evals<span>Free resources from people who build AI</span></div>
-  <div class="url">github.com/Rahat-ch/everything-evals</div>
+  <div class="name"><b>Everything Evals</b><span>Free resources from people who build AI</span><span class="url">github.com/Rahat-ch/everything-evals</span></div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="43.0 -523.0 487.0 555.0" class="logo" aria-label="rahat"><path fill="#0b0b0b" d="M373 -496V-383H328Q260 -383 222.5 -347.0Q185 -311 185 -240V0H63V-493H178L185 -421Q201 -459 236.0 -481.0Q271 -503 319 -503Q345 -503 373 -496Z"/><path fill="#127a4f" d="M348 -67Q348 -100 372.0 -123.5Q396 -147 429.0 -147.0Q462 -147 486.0 -123.5Q510 -100 510 -67Q510 -35 486.0 -11.5Q462 12 429.0 12.0Q396 12 372.0 -11.5Q348 -35 348 -67Z"/></svg>
 </div>
